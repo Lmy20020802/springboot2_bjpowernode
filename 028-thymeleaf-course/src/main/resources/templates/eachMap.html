@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>循环Map</title>
+</head>
+<body>
+<div style="margin-left: 400px">
+    <div th:each="map,userStat:${mymap}">
+        <p th:text="${map.key}"/>
+        <p th:text="${map.value}"/>
+        <p th:text="${map.value.id}"></p>
+        <p th:text="${map.value.name}"></p>
+        <p th:text="${userStat.index}"></p>
+        <p th:text="${userStat.count}"></p>
+        <br/>
+        <hr/>
+    </div>
+</div>
+</body>
+</html>

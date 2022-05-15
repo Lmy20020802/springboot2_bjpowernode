@@ -1,0 +1,16 @@
+#激活使用按个配置文件
+
+#使用dev的环境
+#spring:
+#  profiles:
+#    active: dev
+
+#使用test环境
+#spring:
+#  profiles:
+#    active: test
+
+#使用online环境
+spring:
+  profiles:
+    active: online
